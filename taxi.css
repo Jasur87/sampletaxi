@@ -15,7 +15,7 @@ html {
 }
 
 .main-container {
-  background: url(/css/IMAGES/image\ 1.jpg);
+  background: url(img/image\ 1.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
