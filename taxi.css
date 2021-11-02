@@ -15,7 +15,7 @@ html {
 }
 
 .main-container {
-  background: url(img/image\ 1.jpg);
+  background: url(pic/IMAGES/image\ 1.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -77,7 +77,7 @@ html {
 }
 
 .background-text h2 {
-  color: #ffc61a;
+  color: #ffc700;
   font-size: 50px;
   position: absolute;
   top: 30%;
@@ -89,8 +89,8 @@ html {
   color: white;
   font-size: 40px;
   position: absolute;
-  top: 35%;
-  left: 38%;
+  top: 36%;
+  left: 13%;
   font-weight: bold;
 }
 
@@ -271,11 +271,11 @@ html {
 
 .price-container {
   width: 100%;
-  height: 140vh;
   padding: 4rem;
   align-items: center;
   justify-content: center;
   background: white;
+  margin-bottom: -1140px;
 }
 
 .tariff-section {
@@ -369,13 +369,13 @@ html {
   border-bottom: 15px solid #ffc700;
   border-top: 15px solid #ffc700;
   border-left: 15px solid #ffc700;
-  border-right: 15px soild #ffc700;
+  border-right: 15px solid #ffc700;
   border-radius: 11px;
   cursor: pointer;
 }
 
 .tariff-container a:hover {
-  color: #fffefd;
+  color: black;
 }
 
 .tariff-container {
@@ -393,10 +393,10 @@ html {
 .service {
   width: 100%;
   justify-content: center;
-  background: url(img/image\ 2.svg);
+  background: url(/css/IMAGES/image\ 2.svg);
   background-size: cover;
   background-position: center;
-  padding: 4.5em;
+  padding: 4em;
   position: relative;
   z-index: 1;
 }
@@ -429,7 +429,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 7rem;
+  padding: 5rem;
 }
 
 .left-col .content {
@@ -623,9 +623,53 @@ html {
   align-items: center;
 }
 
+/* servise */
+
+.service {
+  margin-top: 124em;
+}
+.service h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #ffc700;
+}
+.service-container {
+  margin-left: 20px;
+}
+.background-text h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+.background-text p {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  margin-left: -180px;
+}
+.headings p {
+  font-size: 50px;
+}
+
+/* footer*/
+
 .footer-section {
   width: 100%;
-  background: url(img/Rectangle\ 21.svg);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 100%;
+  background: url(/css/IMAGES/Rectangle\ 21.svg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -645,10 +689,11 @@ html {
 }
 
 .sections {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 200px;
+  margin: 0 100px;
   padding-bottom: 20px;
 }
 .about-taxi h1 {
@@ -759,11 +804,16 @@ hr {
   color: #ffffff;
   margin-bottom: 30px;
 }
-/* media section */
 
-@media (max-width: 768px) {
+/* Media Query for Smartphones*/
+@media (max-width: 600px) {
+  body {
+    width: fit-content;
+  }
+
   html {
-    font-size: 50%;
+    width: fit-content;
+    font-size: 60%;
   }
   #menu-bar {
     display: initial;
@@ -777,7 +827,7 @@ hr {
   .navbar a {
     display: block;
     font-size: 1.5rem;
-    background: #ffc61a;
+    background: #ffc700;
     margin: 1rem;
     padding: 1rem;
   }
@@ -785,91 +835,84 @@ hr {
     padding: 2rem;
   }
 
-  /* servise */
-
-  .service {
-    margin-top: 124em;
-  }
-  .service h1 {
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 44px;
-    text-transform: uppercase;
-    color: #ffc700;
-  }
-  .service-container {
-    margin-left: 20px;
-  }
-  .background-text h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-  }
-  .background-text p {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-size: 35px;
-    margin-left: -180px;
-  }
-  .headings p {
-    font-size: 50px;
-  }
-
-  /* footer*/
-  .footer-section {
-    width: 100%;
-  }
-
-  .sections {
-    width: 100%;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 130px;
-  }
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .background-text h2 {
-    font-size: 30px;
-  }
-  .background-text p {
+  .header h1 {
     font-size: 25px;
-    position: absolute;
-    align-items: center;
-    margin-left: -140px;
-    text-align: center;
   }
 
+  #menu-bar {
+    font-size: 30px;
+  }
+  .background-text p {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin: 0 -100px;
+    color: white;
+    font-size: 35px;
+  }
   .taxi-image {
     width: 70%;
-    margin: 0 auto;
+    margin: 10px auto;
   }
+  /* about section */
   .about-section {
-    width: 480px;
-    display: inline-block;
-    background: linear-gradient(180deg, #ffc700 40%, #000000 60%);
+    width: fit-content;
+    flex-direction: column;
+    background: linear-gradient(180deg, #ffc700 50%, black 50%);
+    margin-top: -80px;
   }
-
-  .inner-content {
-    margin-left: -95px;
+  .inner-content h2 {
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
   }
   .inner-content p {
-    font-size: 25px;
-    margin-top: 50px;
-    font-style: italic;
+    font-size: 39px;
+    text-align: center;
+  }
+  .inner-content .btn {
+    position: absolute;
+    top: 36%;
+    left: 42%;
+    text-align: center;
   }
 
+  .inner-content-two {
+    width: 100%;
+    margin-left: 80px;
+  }
+
+  .input input {
+    width: fit-content;
+    border: none;
+    padding: 25px;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    outline: none;
+  }
+
+  .inner-content-two h2 {
+    background: #ffc700;
+    width: 620px;
+    height: 70px;
+    box-shadow: -1px 5px 4px -1px rgba(0, 0, 0, 0.25);
+    border-radius: 23px 23px 0px 0px;
+    padding: 23px;
+    margin-bottom: 20px;
+  }
+
+  .input .button {
+    align-items: center;
+    margin-left: 11.6em;
+    text-align: center;
+  }
   .inner-content-two {
     width: 100%;
     flex-basis: 34%;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 50px;
     position: relative;
     z-index: 1;
     margin-bottom: 60px;
@@ -881,81 +924,33 @@ hr {
     position: absolute;
     left: 0;
     top: 0;
-    height: 120%;
-    width: 106%;
+    height: 122%;
+    width: 81%;
     background: #ffffff;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.39);
     border-radius: 24px;
     opacity: 1;
     z-index: -1;
   }
-  .input input {
-    width: 135%;
-    border: none;
-    margin-top: 30px;
-    font-size: 15px;
-    outline: none;
-    margin-right: -5rem;
-  }
-  .inner-content-two h2 {
-    background: #ffc700;
-    width: 390px;
-    height: 70px;
-    box-shadow: -1px 5px 4px -1px rgba(0, 0, 0, 0.25);
-    border-radius: 23px 23px 0px 0px;
-    padding: 23px;
-    margin-bottom: 20px;
-  }
-  .input .phone {
-    width: 115px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.19);
-    margin-left: 42px;
-  }
-  .input .time {
-    width: 115px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.19);
-    margin-left: 42px;
-  }
-  .input .end {
-    width: 115px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.19);
-    margin-left: 42px;
-  }
-  .input .choose-vchicle {
-    width: 308px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.19);
-    margin: 30px 25px;
-  }
-  .input .button {
-    align-items: center;
-    margin-left: 115px;
-  }
-  .price-container {
-    width: 100%;
-    flex-basis: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-left: 70px;
-  }
-  .tariff-container {
-    margin-top: 150px;
-    margin-bottom: -50px;
-  }
-  .service {
-    width: 480px;
+  .service h1 {
+    margin-bottom: 50px;
   }
   .service-container {
-    margin-left: 20px;
-  }
-  .download-taxi {
-    width: 480px;
-  }
-  .left-colomn img {
     width: 100%;
-    margin-left: -40px;
+    margin: 20px;
   }
-  .contact-section {
-    width: 480px;
+  .contact-section .headings h1 {
+    font-weight: bold;
+    width: 545px;
+  }
+  .contacts {
+    width: 100%;
+  }
+  .contacts h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .contacts p {
+    text-align: center;
   }
 }
