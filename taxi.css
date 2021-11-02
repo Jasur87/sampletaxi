@@ -15,7 +15,7 @@ html {
 }
 
 .main-container {
-  background: url(pic/IMAGES/image\ 1.jpg);
+  background: url(img/image\ 1.jpg);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -393,7 +393,7 @@ html {
 .service {
   width: 100%;
   justify-content: center;
-  background: url(/css/IMAGES/image\ 2.svg);
+  background: url(img/image\ 2.svg);
   background-size: cover;
   background-position: center;
   padding: 4em;
@@ -669,7 +669,7 @@ html {
 
 .footer-section {
   width: 100%;
-  background: url(/css/IMAGES/Rectangle\ 21.svg);
+  background: url(img/Rectangle\ 21.svg);
   background-size: cover;
   background-position: center;
   position: relative;
